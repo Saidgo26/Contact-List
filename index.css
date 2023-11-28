@@ -21,9 +21,7 @@ body{
     align-items: center;
 
 }
-h6{
-    display: none;
-}
+
 h1, h2{
     text-align: center;
     margin: 0;
@@ -129,6 +127,11 @@ h1, h2{
     border-color: #3bed7d;
     overflow: auto;
     
+}
+.list-text{
+    text-align: center; 
+    color: #013215;
+    font-weight: 700; 
 }
 .edit-name, .edit-number{
    padding: 0.3rem;

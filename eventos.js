@@ -12,6 +12,14 @@ let contacts = [];
 
 const renderContacts = () =>{
   list.innerHTML = '';
+  if(contacts.length === 0){
+    const listText = document.createElement('p');
+    listText.classList.add('list-text');
+    listText.innerHTML = `No hay contactos :(`;
+    list.append(listText);
+    console.log('no hay contactos');
+    
+  }
   contacts.forEach(contact => {
     const listItem = document.createElement('li');
     listItem.classList.add('contacts');
